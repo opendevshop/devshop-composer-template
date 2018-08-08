@@ -1,12 +1,12 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "name": "devshop/composer-template",
+    "description": "Project template for Drupal 8 projects with composer, ready to run on Aegir & DevShop",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "",
-            "role": ""
+            "name": "Jon Pugh",
+            "role": "Lead Developer"
         }
     ],
     "repositories": [
@@ -21,7 +21,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
-        "drush/drush": "^9.0.0",
+        "drush/drush": "^8.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
@@ -50,12 +50,8 @@
         "pre-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
+        "post-install-cmd": [],
+        "post-update-cmd": []
     },
     "extra": {
         "installer-paths": {

@@ -15,6 +15,11 @@ use Webmozart\PathUtil\Path;
 
 class ScriptHandler {
 
+    /**
+     * This is no longer used in devshop/composer-template. It used to be triggerd by composer.json.
+     *
+     * @TODO: Remove this file if we can, or just this function.
+     */
   public static function createRequiredFiles(Event $event) {
     $fs = new Filesystem();
     $drupalFinder = new DrupalFinder();

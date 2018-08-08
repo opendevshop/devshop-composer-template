@@ -7,6 +7,10 @@
         {
             "name": "Jon Pugh",
             "role": "Lead Developer"
+        },
+        {
+            "name": "Jacinto Capote",
+            "role": "Lead Developer"
         }
     ],
     "repositories": [

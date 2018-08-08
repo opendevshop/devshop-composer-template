@@ -137,3 +137,8 @@ To prevent this you can add this code to specify the PHP version you want to use
     "platform": {"php": "5.5.9"}
 },
 ```
+
+# Support
+
+This project is supported by ThinkDrop Inc and the DevShop.Support service. See https://devshop.support for more information.
+

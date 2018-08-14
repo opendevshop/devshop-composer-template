@@ -31,7 +31,14 @@ The `composer create-project` command passes ownership of all files to the
 project that is created. You should create a new git repository, and commit 
 all files not excluded by the .gitignore file.
 
-## What does the template do?
+## What does this template do?
+
+- Downgrades to drush 8. (I'm so sorry. Soon, I promise.)
+- Adds aegir files to .gitignore.
+- Sets config.platform.php to 5.5 for greatest compatibility.
+- Adds a /tests folder with Drupal Behat Tests ready to go.
+
+## What does the parent project (drupal-composer/drupal-project) do?
 
 When installing the given `composer.json` some tasks are taken care of:
 

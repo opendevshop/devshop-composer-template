@@ -36,7 +36,7 @@ all files not excluded by the .gitignore file.
 - Downgrades to drush 8. (I'm so sorry. Soon, I promise.)
 - Adds aegir files to .gitignore.
 - Sets config.platform.php to 5.5 for greatest compatibility.
-- Adds a /tests folder with Drupal Behat Tests ready to go.
+- Adds a /tests folder with Drupal Behat Tests ready to go. (TODO)
 
 ## What does the parent project (drupal-composer/drupal-project) do?
 

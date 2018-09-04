@@ -22,6 +22,11 @@
 /web/sites/default/default.services.yml
 /web/sites/default/default.settings.php
 /web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/sites.php
+/web/update.php
+/web/web.config
 
 # Ignore sensitive information
 /web/sites/*/settings.php

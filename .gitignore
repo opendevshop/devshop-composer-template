@@ -27,6 +27,9 @@
 /web/sites/sites.php
 /web/update.php
 /web/web.config
+/web/modules/.gitkeep
+/web/profiles/.gitkeep
+/web/themes/.gitkeep
 
 # Ignore sensitive information
 /web/sites/*/settings.php

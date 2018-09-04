@@ -6,6 +6,8 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+/.editorconfig
+/.gitattributes
 
 # Ignore sensitive information
 /web/sites/*/settings.php

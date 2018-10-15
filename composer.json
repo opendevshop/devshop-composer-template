@@ -58,10 +58,14 @@
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "echo 'Running composer install in tests folder...'",
+            "@composer install --working-dir=tests --ansi"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "echo 'Running composer update in tests folder...'",
+            "@composer update --working-dir=tests --ansi"
         ],
         "drupal:upgrade": [
             "@composer update drupal/core webflo/drupal-core-require-dev symfony/* --with-dependencies"

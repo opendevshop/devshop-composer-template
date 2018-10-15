@@ -1,0 +1,17 @@
+{
+  "minimum-stability": "dev",
+  "require": {
+    "devshop/behat-drupal-extension": "dev-master"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "if [ ! -f behat.yml ]; then echo 'Copying default behat.yml file into place...' && cp vendor/devshop/behat-drupal-extension/behat.example.yml behat.yml; fi ",
+      "bin/behat --init"
+    ],
+    "post-update-cmd": [
+    ]
+  }
+}

@@ -5,4 +5,4 @@ Feature: Behat tests work out of the box.
 
   Scenario: Make sure we can run bin/behat
     Given I run "pwd"
-    And I run "bin/behat -dl"
+    And I run "bin/behat -dl --colors"

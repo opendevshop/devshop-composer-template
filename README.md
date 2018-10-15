@@ -16,7 +16,7 @@ for your setup.
 After that you can create the project:
 
 ```
-composer create-project devshop/composer-template:8.x-dev some-dir --stability dev --no-interaction
+composer create-project devshop/composer-template:8.x-dev --stability dev --no-interaction mynewproject
 ```
 
 With `composer require ...` you can download new dependencies to your 

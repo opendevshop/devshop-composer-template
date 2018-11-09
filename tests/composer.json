@@ -1,0 +1,9 @@
+{
+  "minimum-stability": "dev",
+  "require": {
+    "devshop/behat-drupal-extension": "dev-master"
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}

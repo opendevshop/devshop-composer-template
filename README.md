@@ -38,6 +38,7 @@ all files not excluded by the .gitignore file.
 - Adds aegir files to .gitignore.
 - Sets config.platform.php to 5.5 for greatest compatibility.
 - Adds a /tests folder with Drupal Behat Tests ready to go. (TODO)
+- Uses the [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin to download the scaffold files (like index.php, update.php, …) to the web/ directory of your project. For more on this, see the section entitled "Should I commit the scaffolding files?", below.
 
 ## What does the parent project (drupal-composer/drupal-project) do?
 
@@ -95,23 +96,11 @@ workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faq
 
 ### Should I commit the scaffolding files?
 
-The [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin can download the scaffold files (like
-index.php, update.php, …) to the web/ directory of your project. If you have not customized those files you could choose
-to not check them into your version control system (e.g. git). If that is the case for your project it might be
-convenient to automatically run the drupal-scaffold plugin after every install or update of your project. You can
-achieve that by registering `@composer drupal:scaffold` as post-install and post-update command in your composer.json:
+You don't need to, and by default, your changes will be overwritten. If you're considering it, **read on**. The [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin downloads the scaffold files (like
+index.php, update.php, …) to the web/ directory of your project, through registering `@composer drupal:scaffold` as post-install and post-update commands in composer.json. If you have customized those files, you could choose to check them into your version control system (e.g. git). If that is the case for your project, you should remove the following line from both "post-install-cmd", and "post-update-cmd" in the project's composer.json: 
 
 ```json
-"scripts": {
-    "post-install-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ],
-    "post-update-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ]
-},
+"@composer drupal:scaffold",
 ```
 ### How can I apply patches to downloaded modules?
 

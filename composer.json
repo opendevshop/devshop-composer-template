@@ -65,7 +65,7 @@
         ],
         "post-update-cmd": [
             "@composer drupal:scaffold",
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
             "echo 'Running composer update in tests folder...'",
             "@composer update --working-dir=tests --ansi"
         ],

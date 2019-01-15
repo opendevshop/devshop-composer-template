@@ -4,10 +4,9 @@
     "devshop/behat-drupal-extension": "dev-master"
   },
   "config": {
-    "bin-dir": "bin"
-  },
-  "config": {
     "sort-packages": true,
-    "platform": {7
+    "platform": {
       "php": "5.5.9"
     }
+  }
+}

@@ -92,6 +92,9 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
-        }
+        },
+        "preserve-paths": [
+            "web/sites"
+        ]
     }
 }

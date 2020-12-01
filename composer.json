@@ -44,7 +44,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2"
+        }
     },
     "autoload": {
         "classmap": [
@@ -81,6 +84,10 @@
             "drupal/core": "-p2"
         },
         "drupal-scaffold": {
+            "initial": {
+                ".editorconfig": "../.editorconfig",
+                ".gitattributes": "../.gitattributes"
+            },
             "locations": {
                 "web-root": "web/"
             }
@@ -92,12 +99,6 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
-        },
-        "drupal-scaffold": {
-            "initial": {
-                ".editorconfig": "../.editorconfig",
-                ".gitattributes": "../.gitattributes"
-            }
         },
         "preserve-paths": [
             "web/sites"
